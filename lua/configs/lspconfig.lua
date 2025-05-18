@@ -3,6 +3,9 @@ require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
 
+require("java").setup()
+lspconfig.jdtls.setup {}
+
 -- EXAMPLE
 local servers = { "html", "cssls", "gopls", "gleam" }
 local nvlsp = require "nvchad.configs.lspconfig"

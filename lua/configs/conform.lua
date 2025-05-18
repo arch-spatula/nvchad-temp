@@ -6,6 +6,7 @@ local options = {
     vue = { "prettier" },
     javascript = { "prettier" },
     typescript = { "prettier" },
+    markdown = { "prettier" },
   },
 
   -- format_on_save = {
