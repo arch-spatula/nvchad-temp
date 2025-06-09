@@ -1,9 +1,10 @@
 -- load defaults i.e lua_lsp
 
+require("java").setup()
+
+require("lspconfig").jdtls.setup {}
 require("nvchad.configs.lspconfig").defaults()
 
--- require("java").setup()
--- require("lspconfig").jdtls.setup {}
 local servers = { "html", "cssls", "gopls", "gleam", "ts_ls", "vue_ls" }
 vim.lsp.enable(servers)
 -- read :h vim.lsp.config for changing options of lsp servers 
