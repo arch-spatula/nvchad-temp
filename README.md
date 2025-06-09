@@ -8,4 +8,18 @@
 
 1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
 
+## 설치
+
+```sh 
+git clone https://github.com/arch-spatula/nvchad-temp.git ~/.config/nvim && nvim
+```
+
+## 삭제
+
+```sh 
+# Linux / MacOS (unix)
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+```
 
