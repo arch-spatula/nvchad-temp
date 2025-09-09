@@ -26,6 +26,8 @@ return {
         "typescript",
         "java",
         "zig",
+        "c",
+        "cpp",
       },
     },
   },

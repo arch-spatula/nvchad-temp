@@ -2,7 +2,20 @@
 
 require("nvchad.configs.lspconfig").defaults()
 
-local servers = { "html", "cssls", "gopls", "gleam", "ts_ls", "vue_ls", "zls" }
+local servers = {
+  "html",
+  "cssls",
+  "gopls",
+  "gleam",
+  "ts_ls",
+  "vue_ls",
+  "zls",
+  "clangd",
+  -- DAP 설정
+  -- clang++ debug main.cpp -o main <- 디버그 모드로 빌드
+  -- (이런저런 실행파일 경로)/main <- 실행할 파일 이름
+  "codelldb",
+}
 vim.lsp.enable(servers)
 -- read :h vim.lsp.config for changing options of lsp servers
 

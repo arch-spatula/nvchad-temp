@@ -30,3 +30,17 @@ map("x", "<leader>p", [["_dP]])
 map("n", "<leader>s", [[:%s/\<<C-r><C-w\>/<C-r><C-w>/gI<Left><Left>]])
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+
+-- 디버거 맵핑
+map("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>", { desc = "[D]ebug [B]reakpoint: add debug breakpoint" })
+-- 혼란스러우면 아래 단축키를 해제하고 사용하기
+-- map("n", "<C-b>", dap.toggle_breakpoint, {  desc = "DAP Toggle Breakpoint" })
+-- map("n", "<leader>dr", "<cmd> DapContinue <CR>", { desc = "[D]ebug [R]un: start or continue the debugger" })
+-- 크롬 브라우저 디버거 단축키 활용
+-- https://developer.chrome.com/docs/devtools/shortcuts?hl=ko
+map("n", "<F8>", "<cmd> DapContinue <CR>", { desc = "DAP Continue" })
+map("n", "<F10>", "<cmd> DapStepOver <CR>", { desc = "DAP Step Over" })
+map("n", "<F11>", "<cmd> DapStepInto <CR>", { desc = "DAP Step Into" })
+map("n", "<S-F11>", "<cmd> DapStepOut <CR>", { desc = "DAP Step Out" })
+
+
